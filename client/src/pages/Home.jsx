@@ -30,18 +30,18 @@ const TitleHead = styled.h1`
 const Home = () => {
 
   return (
-    <div>
-        <Navbar/>
-        <Announcement/>
-        <Slider/>
-        <Categories/>
-        <Title><TitleHead>
-         TRENDING NOW
-        </TitleHead> </Title>
-        <Products/>
-        <Newsletter/>
-        <Footer/>
-    </div>
+    <>
+    <Navbar/>
+    <Announcement/>
+    <Slider/>
+    <Categories/>
+    <Title><TitleHead>
+    TRENDING NOW
+    </TitleHead> </Title>
+    <Products/>
+    <Newsletter/>
+    <Footer/>
+    </>
   )
 }
 

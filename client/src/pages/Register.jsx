@@ -5,19 +5,24 @@ const Container = styled.div`
     width: 100vw;
     height: 100vh;
     background: linear-gradient(
-      rgba(255,255,255,0.5),
-      rgba(255,255,255,0.5)
-    ), url("https://i.ibb.co/rt8SynB/averie-woodard-4nulm-JUYFo-unsplash.jpg" )center;
+      rgba(255,255,255,0),
+      rgba(255,255,255,0.1)
+    ), url("https://i.ibb.co/t8fVH1s/seductive-blonde-woman-pink-jacket-posing.jpg" )center;
     background-size: cover;
+    object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 `;
 const Wrapper = styled.div`
     padding: 20px;
     width: 40%;
     display: flex;
-    background-color: white;
+    background-color: transparent;background: linear-gradient(
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.7)
+    );
 
     flex-direction: column;`;
 const Title = styled.h1`
@@ -43,7 +48,7 @@ const Button = styled.button`
     border: none;
     font-size: 20px;
     padding: 15px 20px;
-    background-color: teal;
+    background-color: #555;
     color: white;
     font-weight: 300;
 `;
