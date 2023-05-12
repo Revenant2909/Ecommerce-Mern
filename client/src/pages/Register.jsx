@@ -49,7 +49,7 @@ const Button = styled.button`
     font-size: 20px;
     padding: 15px 20px;
     background-color: #555;
-    color: black;
+    color: aliceblue;
     font-weight: 300;
 `;
 
