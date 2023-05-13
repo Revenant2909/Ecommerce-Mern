@@ -6,7 +6,7 @@ const Container = styled.div`
     height: 100vh;
     background: linear-gradient(
       rgba(255,255,255,0),
-      rgba(255,255,255,0.1)
+      rgba(255,255,255,0.2)
     ), url("https://i.ibb.co/t8fVH1s/seductive-blonde-woman-pink-jacket-posing.jpg" )center;
     background-size: cover;
     object-fit: contain;
