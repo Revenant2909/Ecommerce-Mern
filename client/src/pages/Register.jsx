@@ -6,14 +6,14 @@ const Container = styled.div`
     height: 100vh;
     background: linear-gradient(
       rgba(255,255,255,0),
-      rgba(255,255,255,0.2)
+      rgba(255,255,255,0.5)
     ), url("https://i.ibb.co/t8fVH1s/seductive-blonde-woman-pink-jacket-posing.jpg" )center;
     background-size: cover;
     object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: aliceblue;
 `;
 const Wrapper = styled.div`
     padding: 20px;
