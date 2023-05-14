@@ -16,7 +16,7 @@ const Container = styled.div`
     color: aliceblue;
 `;
 const Wrapper = styled.div`
-    padding: 20px;
+    padding: 21px;
     width: 40%;
     display: flex;
     background-color: transparent;background: linear-gradient(
