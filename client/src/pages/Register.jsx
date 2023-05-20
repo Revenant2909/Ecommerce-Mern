@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     width: 40%;
     display: flex;
     background-color: transparent;background: linear-gradient(
-      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.4),
       rgba(0,0,0,0.7)
     );
 
