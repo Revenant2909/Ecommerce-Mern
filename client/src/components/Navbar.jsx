@@ -75,8 +75,14 @@ const MenuItem = styled.div`
     ${mobile({ fontSize: "12px", marginLeft:"10px" })}
 `
 const Navbar = () => {
-
-    const quantity = useSelector(state=>state.cart.quantity)
+    const user = useSelector(state => state.user.currentUser);
+    const quantity = useSelector(state=>state.cart.quantity);
+    
+    const handleLogout = () =>{
+        localStorage.removeItem("persist:root");
+        window.location.reload(false);
+        console.log("Logged out");
+    }
 
   return (
     <Container>
@@ -95,12 +101,14 @@ const Navbar = () => {
             <Link to="/wishlist">
             <MenuItem>WISHLIST</MenuItem>
             </Link>
-            <Link to="/register">
-            <MenuItem>REGISTER</MenuItem>
-            </Link>
-            <Link to="/login">
-            <MenuItem>SIGN IN</MenuItem>
-            </Link>
+            { !user ?
+                <Link to="/register"> <MenuItem>REGISTER</MenuItem> </Link>
+                : <MenuItem></MenuItem>
+
+            }
+            {
+            !user ? <Link to="/login"> <MenuItem>SIGN IN</MenuItem> </Link> :  <MenuItem onClick={handleLogout}> LOGOUT </MenuItem> 
+            }
             <Link to="/cart">
             <MenuItem>
             <Badge badgeContent={quantity}>
